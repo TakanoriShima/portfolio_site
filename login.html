@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ゲームコミュニティ</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="loginbotan">
+            <div class="login">
+                <h1>ログイン</h1>
+                <div class="mail">
+                    <input type="text" placeholder="メールアドレス">
+                </div>
+                <div class="password">
+                    <input type="password" placeholder="パスワード">
+                </div>
+            </div>
+            <div class="loginbutton">
+                <input type="button" value="ログイン">
+            </div>
+        </div>
+        <div class="sinkitouroku">
+            <input type="button" value="新規登録を表示" id="s1">
+        </div>
+        <div class="sinki">
+            <h1>新規登録</h1>
+            <div class="mail">
+                <input type="text" placeholder="メールアドレス">
+            </div>
+            <div class="password">
+                <input type="password" placeholder="パスワード">
+            </div>
+            <div class="loginbutton">
+                <input type="button" value="新規登録">
+            </div>
+        </div>
+        <script>
+            const button = document.getElementById('s1');
+            button.addEventListener('click', () => {
+               const sinki = document.getElementsByClassName('sinki')[0];
+               sinki.style.visibility = "visible";
+            });
+        </script>
+    </body>
+</html>
