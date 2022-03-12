@@ -3,8 +3,8 @@
 // ファイルチューザーの表示
 $('up1').show();
 $('.upload').hide();
-$('.up1').on('click', () => {
-    $('.up1').hide();
+$('.syoki').on('click', () => {
+    // $('.up1').hide();
     $('.upload').show();
 });
 
